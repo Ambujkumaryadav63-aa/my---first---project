@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ambuj Kumar | Premium Physiotherapy Clinic</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            align-items: center;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ffffff;
+            padding: 15px 5%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .container-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: #0d9488;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: #ffffff;
+            padding: 60px 0;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 250px;
+            /* Pehle 200px tha, ab thoda bada dikhega */
+            height: 250px;
+            border-radius: 50%;
+            /* Perfect gol karne ke liye */
+            object-fit: cover;
+            border: 5px solid #0d9488;
+        }
+
+        .badge {
+            background-color: #ccfbf1;
+            color: #0f766e;
+            padding: 4px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        .hero-text h1 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+
+        .degree {
+            color: #0d9488;
+            font-weight: 600;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .btn-primary {
+            background-color: #0d9488;
+            color: rgb(255, 255, 255);
+        }
+
+        .btn-secondary {
+            background-color: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+        }
+
+        /* Services */
+        .services-section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            border-left: 4px solid #0d9488;
+        }
+
+        /* Floating Buttons */
+        .floating-container {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 1000;
+        }
+
+        .float-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            margin-top: 10px;
+            font-size: 24px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .float-call {
+            background-color: #2563eb;
+        }
+
+        .float-wa {
+            background-color: #16a34a;
+        }
+
+        footer {
+            background-color: #1e293b;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 12px;
+            margin-top: 50px;
+        }
+
+        .image-wrapper {
+            display: flex;
+            /* Isse box center mein aata hai */
+            justify-content: center;
+            /* Horizontal center */
+            width: 100%;
+            /* Pura width lega */
+            padding: 20px 0;
+            /* Upar-niche thodi jagah */
+        }
+
+        .image-wrapper img {
+            max-width: 90%;
+            /* Photo screen se badi nahi hogi */
+            height: auto;
+            /* Photo khichegi nahi */
+            border-radius: 10px;
+            /* Sundar dikhegi */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            /* Shadow */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container-flex">
+            <div class="logo">Kumar <span>Physio</span></div>
+            <div class="nav-contact">📱 +91 9608925254</div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container grid-2">
+            <div class="hero-image">
+                <img src="dr-photo.jpg" class="profile-img" alt="Dr. Ambuj Kumar">
+            </div>
+            <div class="hero-text">
+                <span class="badge">Consultant Physiotherapist</span>
+                <h1>Dr. Ambuj Kumar</h1>
+
+                <p class="degree">BPT, MIAP | Sports & Neuro Rehab Specialist</p>
+                <p class="bio">Hum bina dawa ke, scientific exercise aur modern machines se aapke dard ko jad se theek
+                    karte hain. Aapka swasthya hi hamari sabse badi kamyabi hai.</p>
+                <div class="hero-buttons">
+                    <a href="tel:+919608925254" class="btn btn-primary">📞 Call Now</a>
+                    <a href="https://wa.me/919608925254" class="btn btn-secondary">💬 WhatsApp</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=NTPC+Road+No.+4,+East+Ram+Krishna+Nagar,+Ramkrishan+Nagar,+Patna"
+                        target="_blank" class="btn" style="background-color: #8f35ea; color: white;">
+                        📍 View on Google Map
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Hamari Specialized Services</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🦴</div>
+                    <h3>Back & Neck Pain</h3>
+                    <p>Kamar dard, sciatica, aur gardan ke dard ka modern therapy se ilaj.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏃</div>
+                    <h3>Sports Injury Rehab</h3>
+                    <p>Muscle tear aur joint pain se khiladiyon ki fast recovery.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏡</div>
+                    <h3>Home Visit Service</h3>
+                    <p>Bujurg patients ke liye ghar par aakar therapy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 50px 0; background-color: #f1f5f9;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 30px;">Hamare Bare Mein</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #475569;">
+                Dr. Ambuj Kumar Physio Clinic mein hum patients ko dard-mukt jeevan dene ke liye pratibaddh hain. Humne
+                ab tak 500+ patients ka safalta-purvak ilaj kiya hai. Hamara lakshya sirf dard kam karna nahi, balki
+                aapke sharir ki functional ability ko wapas lana hai.
+            </p>
+        </div>
+    </section>
+
+    <section style="padding: 50px 0;">
+        <div class="container grid-2">
+            <div class="card">
+                <h3>⏰ Clinic Timings</h3>
+                <p><strong>Monday - Saturday:</strong> 10:00 AM - 08:00 PM</p>
+                <p><strong>Sunday:</strong> Sirf Emergency Cases</p>
+            </div>
+            <div class="card">
+                <h3>📍 Address</h3>
+                <p>Main Road, Near City Hospital, Patna, Bihar - 800001</p>
+                <p><strong>Phone:</strong> +91 9608925254</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 50px 0; background-color: #295a6d7d;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Patients Kya Kehte Hain?</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <p>"Dr. Ambuj ka ilaj bahut achha hai, mere kamar ka dard 1 hafte mein theek ho gaya."</p>
+                    <p style="margin-top:10px; font-weight:bold;">- Rajesh Kumar</p>
+                </div>
+                <div class="card">
+                    <p>"Modern machines aur exercises se mujhe bahut rahat mili. Highly recommended!"</p>
+                    <p style="margin-top:10px; font-weight:bold;">- Sunita Devi</p>
+                </div>
+                <div class="card">
+                    <p>"Home visit service bahut badhiya hai, ghar aakar bahut ache se treatment kiya."</p>
+                    <p style="margin-top:10px; font-weight:bold ;">- Amit Sharma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="floating-container">
+        <a href="tel:+919608925254" class="float-btn float-call">📞</a>
+        <a href="https://wa.me/919608925254" class="float-btn float-wa">💬</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kumar Physio Clinic. All Rights Reserved. | Safe & Secure Website</p>
+    </footer>
+    <div>
+        <img src="1stphoto.jpeg" alt="">
+    </div>
+    <div class="image-wrapper">
+        <img src="exercise.jpg" alt="Exercise">
+    </div>
+
+</body>
+
+</html>
